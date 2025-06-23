@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f0f0f0;
+        }
+        img {
+            margin-top: 20px;
+            max-width: 400px;
+            height: auto;
+        }
+        #datetime {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, welcome to your Dockerized Web Page!</h1>
+    <div id="datetime">Loading current date and time...</div>
+    <img src="my-image.jpg" alt="Personalized Image">
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const dateTimeString = now.toLocaleString();
+            document.getElementById('datetime').textContent = "Current date and time: " + dateTimeString;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000); // Update every second
+    </script>
+</body>
+</html>
