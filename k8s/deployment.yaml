@@ -15,7 +15,7 @@ spec:
       serviceAccountName: webapp-sa
       containers:
       - name: webapp
-        image: anandkumarmk6479/pyweb:latest
+        image: anandkumarmk6479/pytestweb
         ports:
         - containerPort: 5000
         envFrom:
