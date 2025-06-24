@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copy HTML and image file
 COPY index.html /app/
-COPY my-image.jpg /app/
+#COPY my-image.jpg /app/
 
 EXPOSE 8000
 
