@@ -17,7 +17,7 @@ spec:
       - name: webapp-deployment-6479
         image: anandkumarmk6479/dyn-nodejs:v1
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
         envFrom:
         - configMapRef:
             name: webapp-config-6479
