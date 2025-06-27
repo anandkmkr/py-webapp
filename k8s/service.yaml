@@ -4,10 +4,10 @@ metadata:
   name: webapp-service-6479
 spec:
   selector:
-    app: webapp
+    app: webapp-deployment-6479
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 5000
+      targetPort: 8080
   type: ClusterIP
 
