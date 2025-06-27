@@ -15,7 +15,7 @@ spec:
       serviceAccountName: webapp-sa
       containers:
       - name: webapp
-        image: anandkumarmk6479/dyn-nodejs:v1
+        image: anandkumarmk6479/pyweb
         ports:
         - containerPort: 5000
         envFrom:
