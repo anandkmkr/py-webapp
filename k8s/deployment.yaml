@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webapp
+      app: webapp-deployment-6479
   template:
     metadata:
       labels:
-        app: webapp
+        app: webapp-deployment-6479
     spec:
       serviceAccountName: webapp-sa-6479
       containers:
@@ -20,7 +20,7 @@ spec:
         - containerPort: 5000
         envFrom:
         - configMapRef:
-            name: webapp-config
+            name: webapp-config-6479
         - secretRef:
             name: webapp-secret-6479
         volumeMounts:
