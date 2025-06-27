@@ -1,7 +1,7 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: webapp-route
+  name: webapp-route-6479
 spec:
   to:
     kind: Service
