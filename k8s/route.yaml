@@ -5,9 +5,9 @@ metadata:
 spec:
   to:
     kind: Service
-    name: webapp-service
+    name: webapp-service-6479
   port:
-    targetPort: 8000
+    targetPort: 8080
   tls:
     termination: edge
 
