@@ -14,10 +14,10 @@ spec:
     spec:
       serviceAccountName: webapp-sa-6479
       containers:
-      - name: webapp
-        image: anandkumarmk6479/pytestweb:v1
+      - name: webapp-deployment-6479
+        image: anandkumarmk6479/dyn-nodejs:v1
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
         envFrom:
         - configMapRef:
             name: webapp-config-6479
