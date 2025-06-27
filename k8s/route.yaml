@@ -7,7 +7,7 @@ spec:
     kind: Service
     name: webapp-service-6479
   port:
-    targetPort: 8080
+    targetPort: 5000
   tls:
     termination: edge
 
