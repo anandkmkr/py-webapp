@@ -1,10 +1,11 @@
-FROM node:18-alpine
+FROM python:3.13-slim
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY index.html .
-COPY my-image.jpg .
+# Copy HTML and image file
+COPY index.html /app/
+COPY my-image.jpg /app/
 
-EXPOSE 8080
+EXPOSE 8000
 
-CMD ["node", "-e", "require('http').createServer((req, res) => require('fs').createReadStream('index.html').pipe(res)).listen(8080)"]
+CMD ["python", "-m", "http.server", "8000"]
