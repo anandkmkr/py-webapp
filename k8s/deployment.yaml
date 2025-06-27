@@ -17,7 +17,7 @@ spec:
       - name: webapp
         image: anandkumarmk6479/pytestweb:v1
         ports:
-        - containerPort: 5000
+        - containerPort: 8000
         envFrom:
         - configMapRef:
             name: webapp-config-6479
