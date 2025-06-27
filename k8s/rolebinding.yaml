@@ -4,7 +4,7 @@ metadata:
   name: webapp-rolebinding-6479
 subjects:
 - kind: ServiceAccount
-  name: webapp-sa
+  name: webapp-sa-6479
 roleRef:
   kind: Role
   name: webapp-role-6479
