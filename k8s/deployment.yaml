@@ -12,7 +12,7 @@ spec:
       labels:
         app: webapp
     spec:
-      serviceAccountName: webapp-sa
+      serviceAccountName: webapp-sa-6479
       containers:
       - name: webapp
         image: anandkumarmk6479/pyweb:v1
@@ -22,12 +22,12 @@ spec:
         - configMapRef:
             name: webapp-config
         - secretRef:
-            name: webapp-secret
+            name: webapp-secret-6479
         volumeMounts:
         - name: data
           mountPath: /data
       volumes:
       - name: data
         persistentVolumeClaim:
-          claimName: webapp-pvc
+          claimName: webapp-pvc-6479
 
